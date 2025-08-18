@@ -1,0 +1,261 @@
+[2025-07-25T06:29:44.976Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[1753421525002] [33MWARN[39M: [33mHMAC verification failed[39m - ip: ::1, reason: timestamp_expired
+[2025-07-25T06:30:32.733Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T06:30:32.734Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T06:30:32.735Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T06:30:32.736Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T06:30:32.737Z] [32MINFO[39M: [32mPageProofAuthService: Session file not found[39m
+[2025-07-25T06:30:32.737Z] [32MINFO[39M: [32mPageProofAuthService: No valid session found (or credentials changed), logging in[39m
+[2025-07-25T06:32:39.241Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T06:32:39.242Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T06:32:39.243Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T06:32:39.244Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T06:32:39.245Z] [32MINFO[39M: [32mPageProofAuthService: Session file not found[39m
+[2025-07-25T06:32:39.245Z] [32MINFO[39M: [32mPageProofAuthService: No valid session found (or credentials changed), logging in[39m
+[2025-07-25T06:33:40.550Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T06:33:40.552Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T06:33:40.553Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T06:33:40.554Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T06:33:40.555Z] [32MINFO[39M: [32mPageProofAuthService: Session file not found[39m
+[2025-07-25T06:33:40.555Z] [32MINFO[39M: [32mPageProofAuthService: No valid session found (or credentials changed), logging in[39m
+[2025-07-25T06:35:43.663Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-07-25T06:35:45.500Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T06:35:45.502Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T06:35:45.502Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T06:35:45.504Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T06:35:45.504Z] [32MINFO[39M: [32mPageProofAuthService: Session file not found[39m
+[2025-07-25T06:35:45.505Z] [32MINFO[39M: [32mPageProofAuthService: No valid session found (or credentials changed), logging in[39m
+[2025-07-25T06:35:46.986Z] [32MINFO[39M: [32mPageProofAuthService: Session encrypted and saved with credentials[39m
+[2025-07-25T06:35:46.987Z] [32MINFO[39M: [32mPageProofAuthService: New session logged in and saved[39m
+[2025-07-25T06:35:46.987Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 1485
+[2025-07-25T06:35:47.794Z] [32MINFO[39M: [32mFetched groups[39m - elapsedMs: 807
+[2025-07-25T06:35:47.795Z] [32MINFO[39M: [32mFound existing collection[39m - collectionName: TEST-2031
+[2025-07-25T06:35:47.795Z] [32MINFO[39M: [32mensureCollectionExists (existing)[39m - elapsedMs: 2293
+[2025-07-25T06:35:47.795Z] [32MINFO[39M: [32mCollection ensured[39m - elapsedMs: 2295
+[2025-07-25T06:35:47.804Z] [32MINFO[39M: [32mUploading files[39m - count: 4, isIndividual: true
+[2025-07-25T06:35:47.805Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:35:48.994Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:48.994Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:49.170Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 4
+[2025-07-25T06:35:49.171Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_LAR_ExpanderSweep_Install_1.jpg, fileId: FX4L1CB13NQT2RQG
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_LAR_ExpanderSweep_Install_1.jpg
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_A140544_SPC24989.ai, fileId: FRRAXLGSSFQ42O1W
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_A140544_SPC24989.ai
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_Flush Mounting Bracket update.docx, fileId: FB70FWQAB364OT8X
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_Flush Mounting Bracket update.docx
+[2025-07-25T06:35:49.172Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 1
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_TK323EQ_SPC20418A.pdf, fileId: FRF109O98MICEQ4M
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_TK323EQ_SPC20418A.pdf
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 1
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 1
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 1
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 1
+[2025-07-25T06:35:49.173Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:35:50.452Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:50.453Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:51.250Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:51.250Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:51.830Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:51.831Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:52.094Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:52.095Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:52.280Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:53.746Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:53.747Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:53.973Z] [32MINFO[39M: [32mWorkflow created[39m - elapsedMs: 4800
+[2025-07-25T06:35:53.973Z] [32MINFO[39M: [32mcreateWorkflow completed[39m - elapsedMs: 4801
+[2025-07-25T06:35:53.973Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 4801
+[2025-07-25T06:35:53.974Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 4802
+[2025-07-25T06:35:53.974Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 4802
+[2025-07-25T06:35:53.974Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 4801
+[2025-07-25T06:35:54.879Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:54.879Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:55.018Z] [32MINFO[39M: [32mProof created[39m - fileId: FRRAXLGSSFQ42O1W, elapsedMs: 1044
+[2025-07-25T06:35:55.070Z] [32MINFO[39M: [32mProof created[39m - fileId: FRF109O98MICEQ4M, elapsedMs: 1096
+[2025-07-25T06:35:55.070Z] [32MINFO[39M: [32mProof created[39m - fileId: FB70FWQAB364OT8X, elapsedMs: 1096
+[2025-07-25T06:35:55.122Z] [32MINFO[39M: [32mProof created[39m - fileId: FX4L1CB13NQT2RQG, elapsedMs: 1148
+[2025-07-25T06:35:55.261Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:55.262Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T06:35:55.747Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FRRAXLGSSFQ42O1W, elapsedMs: 729
+[2025-07-25T06:35:55.748Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1774
+[2025-07-25T06:35:55.764Z] [31MERROR[39M: [31mPageProofService: Failed to set approvers[39m - error: Command failed: scutil --proxy, workflowId: WIXADSDLSCDAHU57
+[2025-07-25T06:35:55.764Z] [31MERROR[39M: [31mError created: Failed to set workflow approvers[39m - statusCode: 500
+[2025-07-25T06:35:55.764Z] [31MERROR[39M: [31mcreateProofWithUpload failed[39m - error: Failed to set workflow approvers
+[2025-07-25T06:35:55.764Z] [31MERROR[39M: [31mFailed to set workflow approvers: Failed to set workflow approvers[39m - stack: Error: Failed to set workflow approvers
+    at r.ErrorHandler.createError (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/dist/server.js:1:26331)
+    at d.createProofs (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/dist/server.js:1:12834)
+    at async Promise.all (index 1)
+    at async Object.batchCreateProofs (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/dist/server.js:1:55867)
+    at async Object.createProofWithUpload (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/dist/server.js:1:46028)
+[2025-07-25T06:36:07.200Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-07-25T06:36:21.237Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T06:36:21.239Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T06:36:21.239Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T06:36:21.241Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T06:36:21.242Z] [32MINFO[39M: [32mPageProofAuthService: Session loaded, decrypted, and credentials match[39m
+[2025-07-25T06:36:21.243Z] [32MINFO[39M: [32mPageProofAuthService: Session restored and set to client[39m
+[2025-07-25T06:36:21.243Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 4
+[2025-07-25T06:36:21.777Z] [32MINFO[39M: [32mFetched groups[39m - elapsedMs: 533
+[2025-07-25T06:36:21.777Z] [32MINFO[39M: [32mFound existing collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:21.777Z] [32MINFO[39M: [32mensureCollectionExists (existing)[39m - elapsedMs: 538
+[2025-07-25T06:36:21.778Z] [32MINFO[39M: [32mCollection ensured[39m - elapsedMs: 541
+[2025-07-25T06:36:21.781Z] [32MINFO[39M: [32mUploading files[39m - count: 4, isIndividual: true
+[2025-07-25T06:36:21.783Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:25.475Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 4
+[2025-07-25T06:36:25.478Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_LAR_ExpanderSweep_Install_1.jpg, fileId: FX583AGA7QQNDREY
+[2025-07-25T06:36:25.478Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_LAR_ExpanderSweep_Install_1.jpg
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_A140544_SPC24989.ai, fileId: FBH3WPU6YJSVV9KP
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_A140544_SPC24989.ai
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_Flush Mounting Bracket update.docx, fileId: F0KT1LDDKVA5M28I
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_Flush Mounting Bracket update.docx
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups_TK323EQ_SPC20418A.pdf, fileId: F125LM32DKQ71238
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups_TK323EQ_SPC20418A.pdf
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:25.479Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:27.612Z] [32MINFO[39M: [32mWorkflow created[39m - elapsedMs: 2133
+[2025-07-25T06:36:27.612Z] [32MINFO[39M: [32mcreateWorkflow completed[39m - elapsedMs: 2133
+[2025-07-25T06:36:27.613Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2134
+[2025-07-25T06:36:27.613Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2134
+[2025-07-25T06:36:27.613Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2134
+[2025-07-25T06:36:27.613Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2134
+[2025-07-25T06:36:28.606Z] [32MINFO[39M: [32mProof created[39m - fileId: F125LM32DKQ71238, elapsedMs: 993
+[2025-07-25T06:36:28.607Z] [32MINFO[39M: [32mProof created[39m - fileId: FX583AGA7QQNDREY, elapsedMs: 994
+[2025-07-25T06:36:29.133Z] [32MINFO[39M: [32mProof created[39m - fileId: F0KT1LDDKVA5M28I, elapsedMs: 1520
+[2025-07-25T06:36:29.201Z] [32MINFO[39M: [32mProof created[39m - fileId: FBH3WPU6YJSVV9KP, elapsedMs: 1588
+[2025-07-25T06:36:29.376Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FX583AGA7QQNDREY, elapsedMs: 768
+[2025-07-25T06:36:29.376Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1763
+[2025-07-25T06:36:29.394Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: F125LM32DKQ71238, elapsedMs: 788
+[2025-07-25T06:36:29.394Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1781
+[2025-07-25T06:36:29.837Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 460
+[2025-07-25T06:36:29.838Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4360
+[2025-07-25T06:36:29.854Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 460
+[2025-07-25T06:36:29.855Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4376
+[2025-07-25T06:36:29.902Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: F0KT1LDDKVA5M28I, elapsedMs: 768
+[2025-07-25T06:36:29.903Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 2290
+[2025-07-25T06:36:29.972Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FBH3WPU6YJSVV9KP, elapsedMs: 771
+[2025-07-25T06:36:29.972Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 2359
+[2025-07-25T06:36:30.367Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 464
+[2025-07-25T06:36:30.368Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4889
+[2025-07-25T06:36:30.486Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 514
+[2025-07-25T06:36:30.487Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 5008
+[2025-07-25T06:36:30.487Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 4
+[2025-07-25T06:36:30.489Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:30.489Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:30.489Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:30.489Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:31.661Z] [32MINFO[39M: [32mcreateProofWithUpload completed[39m - totalElapsedMs: 10424
+[2025-07-25T06:36:42.372Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T06:36:42.373Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T06:36:42.373Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:42.373Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:36:42.374Z] [32MINFO[39M: [32mCollection ensured[39m - elapsedMs: 2
+[2025-07-25T06:36:42.735Z] [32MINFO[39M: [32mUploading files[39m - count: 1, isIndividual: false
+[2025-07-25T06:36:42.735Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:43.399Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-07-25T06:36:43.403Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups, fileId: FBWIQWQ9IIC9LH80
+[2025-07-25T06:36:43.403Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups
+[2025-07-25T06:36:43.404Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T06:36:43.404Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T06:36:43.404Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"approver":["rola.luo+sdk@fbin.com","tony.lezosonjohnbritto@moen.com"],"documentType":"markups"}
+[2025-07-25T06:36:43.404Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:43.404Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 0
+[2025-07-25T06:36:47.173Z] [32MINFO[39M: [32mProof created[39m - fileId: FBWIQWQ9IIC9LH80, elapsedMs: 3769
+[2025-07-25T06:36:47.849Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FBWIQWQ9IIC9LH80, elapsedMs: 675
+[2025-07-25T06:36:47.850Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 4445
+[2025-07-25T06:36:48.294Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 443
+[2025-07-25T06:36:48.294Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4891
+[2025-07-25T06:36:48.295Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-07-25T06:36:48.295Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T06:36:48.792Z] [32MINFO[39M: [32mcreateProofWithUpload completed[39m - totalElapsedMs: 6420
+[2025-07-25T06:47:10.296Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[1753425020644] [33MWARN[39M: [33mHMAC verification failed[39m - ip: ::1, reason: timestamp_expired
+[2025-07-25T07:19:26.837Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-07-25T07:19:44.701Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T07:19:44.703Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T07:19:44.703Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T07:19:44.704Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T07:19:44.707Z] [32MINFO[39M: [32mPageProofAuthService: Session loaded, decrypted, and credentials match[39m
+[2025-07-25T07:21:22.977Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-07-25T07:21:34.507Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-07-25T07:21:35.683Z] [32MINFO[39M: [32mcreateProofWithUpload started[39m - fileCount: 4
+[2025-07-25T07:21:35.684Z] [32MINFO[39M: [32mEnsuring collection exists[39m - collectionName: TEST-2031
+[2025-07-25T07:21:35.685Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-07-25T07:21:35.686Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-07-25T07:21:35.688Z] [32MINFO[39M: [32mPageProofAuthService: Session loaded, decrypted, and credentials match[39m
+[2025-07-25T07:21:35.689Z] [32MINFO[39M: [32mPageProofAuthService: Session restored and set to client[39m
+[2025-07-25T07:21:35.690Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 6
+[2025-07-25T07:21:36.705Z] [33MWARN[39M: [33mGroup fetch is slow[39m - elapsedMs: 1015
+[2025-07-25T07:21:36.705Z] [32MINFO[39M: [32mFetched groups[39m - elapsedMs: 1015
+[2025-07-25T07:21:36.705Z] [32MINFO[39M: [32mFound existing collection[39m - collectionName: TEST-2031
+[2025-07-25T07:21:36.705Z] [32MINFO[39M: [32mensureCollectionExists (existing)[39m - elapsedMs: 1021
+[2025-07-25T07:21:36.706Z] [32MINFO[39M: [32mCollection ensured[39m - elapsedMs: 1023
+[2025-07-25T07:21:37.012Z] [32MINFO[39M: [32mUploading files[39m - count: 1, isIndividual: false
+[2025-07-25T07:21:37.013Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T07:21:37.866Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-07-25T07:21:37.869Z] [32MINFO[39M: [32mCreating proof[39m - proofName: markups, fileId: FPT8AEWEEGUSYX5L
+[2025-07-25T07:21:37.869Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: markups
+[2025-07-25T07:21:37.870Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: TEST-2031
+[2025-07-25T07:21:37.870Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-07-25T07:21:37.870Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T07:21:37.870Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T07:21:43.224Z] [32MINFO[39M: [32mWorkflow created[39m - elapsedMs: 5354
+[2025-07-25T07:21:43.225Z] [32MINFO[39M: [32mcreateWorkflow completed[39m - elapsedMs: 5355
+[2025-07-25T07:21:43.225Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 5355
+[2025-07-25T07:21:44.978Z] [32MINFO[39M: [32mProof created[39m - fileId: FPT8AEWEEGUSYX5L, elapsedMs: 1753
+[2025-07-25T07:21:45.804Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FPT8AEWEEGUSYX5L, elapsedMs: 825
+[2025-07-25T07:21:45.805Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 2579
+[2025-07-25T07:21:46.312Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 507
+[2025-07-25T07:21:46.312Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 8443
+[2025-07-25T07:21:46.313Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-07-25T07:21:46.315Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-07-25T07:21:46.898Z] [32MINFO[39M: [32mcreateProofWithUpload completed[39m - totalElapsedMs: 11215
+[2025-07-25T07:21:49.010Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m

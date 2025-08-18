@@ -1,0 +1,453 @@
+[2025-08-14T07:39:04.730Z] [32MINFO[39M: [32mTemporary directory validated: /tmp[39m
+[2025-08-14T07:39:07.902Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-08-14T07:39:25.855Z] [32MINFO[39M: [32mBusboy upload started[39m - contentType: multipart/form-data; boundary=--------------------------525937977490396320447719, contentLength: 23054283, maxFiles: 12, maxFileSize: 200MB
+[2025-08-14T07:39:25.858Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update - Copy (1).docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:39:25.859Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update.docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:39:25.859Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A - Copy.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 1, maxFiles: 12
+[2025-08-14T07:39:25.860Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:39:25.860Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update - Copy (1).docx, size: 27724
+[2025-08-14T07:39:25.860Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileCount: 1
+[2025-08-14T07:39:25.860Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update.docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:39:25.860Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update.docx, size: 27724
+[2025-08-14T07:39:25.860Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update.docx, fileCount: 2
+[2025-08-14T07:39:25.874Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:39:25.875Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A - Copy.pdf, size: 11212817
+[2025-08-14T07:39:25.875Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileCount: 3
+[2025-08-14T07:39:25.876Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 4, maxFiles: 12
+[2025-08-14T07:39:25.888Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:39:25.889Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A.pdf, size: 11212817
+[2025-08-14T07:39:25.889Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A.pdf, fileCount: 4
+[2025-08-14T07:39:25.890Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Nature.jpeg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:39:25.890Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: techsoldrawing (1).png, encoding: 7bit, mimeType: image/png, fileCount: 5, maxFiles: 12
+[2025-08-14T07:39:25.890Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:39:25.890Z] [32MINFO[39M: [32mFile end event[39m - filename: Nature.jpeg, fileSize: 25415, useMemoryOnly: true
+[2025-08-14T07:39:25.890Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Nature.jpeg, size: 25415
+[2025-08-14T07:39:25.890Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Nature.jpeg, fileCount: 5
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile end event[39m - filename: techsoldrawing (1).png, fileSize: 36400, useMemoryOnly: true
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: techsoldrawing (1).png, size: 36400
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile processing completed[39m - filename: techsoldrawing (1).png, fileCount: 6
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 7, maxFiles: 12
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, size: 254505
+[2025-08-14T07:39:25.891Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileCount: 7
+[2025-08-14T07:39:25.892Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:39:25.892Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, size: 254505
+[2025-08-14T07:39:25.892Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileCount: 8
+[2025-08-14T07:39:25.892Z] [32MINFO[39M: [32mAll files processed[39m - fileCount: 8, bodyKeys: ["metadata"], files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"source":"memory","fieldname":"file"},{"name":"Flush Mounting Bracket update.docx","size":27724,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"Nature.jpeg","size":25415,"source":"memory","fieldname":"file"},{"name":"techsoldrawing (1).png","size":36400,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"source":"memory","fieldname":"file"}]
+[2025-08-14T07:39:25.892Z] [32MINFO[39M: [32mcreateProof started[39m - fileCount: 8, files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"Flush Mounting Bracket update.docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"Nature.jpeg","size":25415,"fieldname":"file","hasBuffer":true},{"name":"techsoldrawing (1).png","size":36400,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"fieldname":"file","hasBuffer":true}]
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating files[39m - fileCount: 8, maxFileSizeMB: 50
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update.docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating file[39m - fileName: Nature.jpeg, fileSize: 25415, hasBuffer: true, bufferSize: 25415, fieldname: file
+[2025-08-14T07:39:25.894Z] [32MINFO[39M: [32mValidating file[39m - fileName: techsoldrawing (1).png, fileSize: 36400, hasBuffer: true, bufferSize: 36400, fieldname: file
+[2025-08-14T07:39:25.896Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:39:25.896Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:39:25.897Z] [32MINFO[39M: [32mFile validation completed[39m - validFiles: 8
+[2025-08-14T07:39:25.897Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-08-14T07:39:25.899Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-08-14T07:39:25.902Z] [32MINFO[39M: [32mPageProofAuthService: Session loaded, decrypted, and credentials match[39m
+[2025-08-14T07:39:25.903Z] [32MINFO[39M: [32mPageProofAuthService: Session restored and set to client[39m
+[2025-08-14T07:39:25.903Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 6
+[2025-08-14T07:39:26.838Z] [32MINFO[39M: [32mFetched groups[39m - elapsedMs: 935
+[2025-08-14T07:39:26.838Z] [32MINFO[39M: [32mFound existing collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:39:26.838Z] [32MINFO[39M: [32mensureCollectionExists (existing)[39m - elapsedMs: 941
+[2025-08-14T07:39:26.838Z] [32MINFO[39M: [32mUploading files[39m - count: 8, isIndividual: false
+[2025-08-14T07:39:26.839Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:27.674Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-08-14T07:39:27.675Z] [32MINFO[39M: [32mCreating proof[39m - proofName: Markups & Reference Documents, fileId: F80ER6JBU3UWO3YW
+[2025-08-14T07:39:27.675Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: Markups & Reference Documents
+[2025-08-14T07:39:27.675Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:39:27.675Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:39:27.675Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:27.675Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:29.988Z] [32MINFO[39M: [32mWorkflow created[39m - elapsedMs: 2312
+[2025-08-14T07:39:29.988Z] [32MINFO[39M: [32mcreateWorkflow completed[39m - elapsedMs: 2313
+[2025-08-14T07:39:29.988Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2313
+[2025-08-14T07:39:30.851Z] [32MINFO[39M: [32mProof created[39m - fileId: F80ER6JBU3UWO3YW, elapsedMs: 862
+[2025-08-14T07:39:32.020Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: F80ER6JBU3UWO3YW, elapsedMs: 1169
+[2025-08-14T07:39:32.020Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 2031
+[2025-08-14T07:39:32.598Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 577
+[2025-08-14T07:39:32.599Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4924
+[2025-08-14T07:39:32.599Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-08-14T07:39:32.600Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:33.049Z] [32MINFO[39M: [32mPublishing proof event to Event Grid[39m - eventId: proof-created-PYVEC82H407O3GNC-1755157173049-6dsxf1072, eventType: PageProof.ProofCreated, proofId: PYVEC82H407O3GNC, action: created
+[2025-08-14T07:39:34.680Z] [32MINFO[39M: [32mProof event published successfully to Event Grid[39m - eventId: proof-created-PYVEC82H407O3GNC-1755157173049-6dsxf1072, proofId: PYVEC82H407O3GNC, action: created
+[2025-08-14T07:39:34.681Z] [32MINFO[39M: [32mEvent Grid events published for created proofs[39m - proofCount: 1
+[2025-08-14T07:39:50.220Z] [32MINFO[39M: [32mBusboy upload started[39m - contentType: multipart/form-data; boundary=--------------------------101366717466229797439268, contentLength: 23054283, maxFiles: 12, maxFileSize: 200MB
+[2025-08-14T07:39:50.222Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update - Copy (1).docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:39:50.222Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update.docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:39:50.222Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:39:50.223Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update - Copy (1).docx, size: 27724
+[2025-08-14T07:39:50.223Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileCount: 1
+[2025-08-14T07:39:50.223Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update.docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:39:50.223Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update.docx, size: 27724
+[2025-08-14T07:39:50.223Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update.docx, fileCount: 2
+[2025-08-14T07:39:50.223Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A - Copy.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 3, maxFiles: 12
+[2025-08-14T07:39:50.240Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:39:50.248Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A - Copy.pdf, size: 11212817
+[2025-08-14T07:39:50.248Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileCount: 3
+[2025-08-14T07:39:50.248Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 4, maxFiles: 12
+[2025-08-14T07:39:50.257Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:39:50.258Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A.pdf, size: 11212817
+[2025-08-14T07:39:50.258Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A.pdf, fileCount: 4
+[2025-08-14T07:39:50.259Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Nature.jpeg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:39:50.259Z] [32MINFO[39M: [32mFile end event[39m - filename: Nature.jpeg, fileSize: 25415, useMemoryOnly: true
+[2025-08-14T07:39:50.259Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Nature.jpeg, size: 25415
+[2025-08-14T07:39:50.259Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Nature.jpeg, fileCount: 5
+[2025-08-14T07:39:50.260Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: techsoldrawing (1).png, encoding: 7bit, mimeType: image/png, fileCount: 6, maxFiles: 12
+[2025-08-14T07:39:50.260Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 6, maxFiles: 12
+[2025-08-14T07:39:50.260Z] [32MINFO[39M: [32mFile end event[39m - filename: techsoldrawing (1).png, fileSize: 36400, useMemoryOnly: true
+[2025-08-14T07:39:50.260Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: techsoldrawing (1).png, size: 36400
+[2025-08-14T07:39:50.260Z] [32MINFO[39M: [32mFile processing completed[39m - filename: techsoldrawing (1).png, fileCount: 6
+[2025-08-14T07:39:50.264Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:39:50.264Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, size: 254505
+[2025-08-14T07:39:50.264Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileCount: 7
+[2025-08-14T07:39:50.265Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 8, maxFiles: 12
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, size: 254505
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileCount: 8
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mAll files processed[39m - fileCount: 8, bodyKeys: ["metadata"], files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"source":"memory","fieldname":"file"},{"name":"Flush Mounting Bracket update.docx","size":27724,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"Nature.jpeg","size":25415,"source":"memory","fieldname":"file"},{"name":"techsoldrawing (1).png","size":36400,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"source":"memory","fieldname":"file"}]
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mcreateProof started[39m - fileCount: 8, files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"Flush Mounting Bracket update.docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"Nature.jpeg","size":25415,"fieldname":"file","hasBuffer":true},{"name":"techsoldrawing (1).png","size":36400,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"fieldname":"file","hasBuffer":true}]
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mValidating files[39m - fileCount: 8, maxFileSizeMB: 50
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update.docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:39:50.266Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mValidating file[39m - fileName: Nature.jpeg, fileSize: 25415, hasBuffer: true, bufferSize: 25415, fieldname: file
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mValidating file[39m - fileName: techsoldrawing (1).png, fileSize: 36400, hasBuffer: true, bufferSize: 36400, fieldname: file
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mFile validation completed[39m - validFiles: 8
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mUploading files[39m - count: 8, isIndividual: false
+[2025-08-14T07:39:50.267Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:51.144Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-08-14T07:39:51.145Z] [32MINFO[39M: [32mCreating proof[39m - proofName: Markups & Reference Documents, fileId: F07FVRV85D48W67M
+[2025-08-14T07:39:51.145Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: Markups & Reference Documents
+[2025-08-14T07:39:51.145Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:39:51.145Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:39:51.145Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["Echo.Xiao@fbin.com","Jane.Zhang@fbin.com","Rola.Luo@fbin.com"],"approver":["Echo.Xiao@fbin.com"],"documentType":"markups"}
+[2025-08-14T07:39:51.145Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:51.146Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 1
+[2025-08-14T07:39:51.849Z] [32MINFO[39M: [32mProof created[39m - fileId: F07FVRV85D48W67M, elapsedMs: 703
+[2025-08-14T07:39:52.387Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: F07FVRV85D48W67M, elapsedMs: 538
+[2025-08-14T07:39:52.387Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1241
+[2025-08-14T07:39:52.974Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 587
+[2025-08-14T07:39:52.975Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 1830
+[2025-08-14T07:39:52.975Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-08-14T07:39:52.975Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:39:53.339Z] [32MINFO[39M: [32mPublishing proof event to Event Grid[39m - eventId: proof-created-PLVXFWQJ7CRIXHGT-1755157193339-9il9wzcpl, eventType: PageProof.ProofCreated, proofId: PLVXFWQJ7CRIXHGT, action: created
+[2025-08-14T07:39:54.398Z] [32MINFO[39M: [32mProof event published successfully to Event Grid[39m - eventId: proof-created-PLVXFWQJ7CRIXHGT-1755157193339-9il9wzcpl, proofId: PLVXFWQJ7CRIXHGT, action: created
+[2025-08-14T07:39:54.398Z] [32MINFO[39M: [32mEvent Grid events published for created proofs[39m - proofCount: 1
+[2025-08-14T07:40:11.472Z] [32MINFO[39M: [32mBusboy upload started[39m - contentType: multipart/form-data; boundary=--------------------------071026093772559624980919, contentLength: 23054219, maxFiles: 12, maxFileSize: 200MB
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update - Copy (1).docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update.docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update - Copy (1).docx, size: 27724
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileCount: 1
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update.docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update.docx, size: 27724
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update.docx, fileCount: 2
+[2025-08-14T07:40:11.474Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A - Copy.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 3, maxFiles: 12
+[2025-08-14T07:40:11.486Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:40:11.487Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A - Copy.pdf, size: 11212817
+[2025-08-14T07:40:11.487Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileCount: 3
+[2025-08-14T07:40:11.488Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 4, maxFiles: 12
+[2025-08-14T07:40:11.502Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:40:11.504Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A.pdf, size: 11212817
+[2025-08-14T07:40:11.504Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A.pdf, fileCount: 4
+[2025-08-14T07:40:11.505Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Nature.jpeg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: techsoldrawing (1).png, encoding: 7bit, mimeType: image/png, fileCount: 5, maxFiles: 12
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile end event[39m - filename: Nature.jpeg, fileSize: 25415, useMemoryOnly: true
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Nature.jpeg, size: 25415
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Nature.jpeg, fileCount: 5
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile end event[39m - filename: techsoldrawing (1).png, fileSize: 36400, useMemoryOnly: true
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: techsoldrawing (1).png, size: 36400
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile processing completed[39m - filename: techsoldrawing (1).png, fileCount: 6
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 7, maxFiles: 12
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, size: 254505
+[2025-08-14T07:40:11.506Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileCount: 7
+[2025-08-14T07:40:11.507Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:40:11.507Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, size: 254505
+[2025-08-14T07:40:11.507Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileCount: 8
+[2025-08-14T07:40:11.507Z] [32MINFO[39M: [32mAll files processed[39m - fileCount: 8, bodyKeys: ["metadata"], files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"source":"memory","fieldname":"file"},{"name":"Flush Mounting Bracket update.docx","size":27724,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"Nature.jpeg","size":25415,"source":"memory","fieldname":"file"},{"name":"techsoldrawing (1).png","size":36400,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"source":"memory","fieldname":"file"}]
+[2025-08-14T07:40:11.507Z] [32MINFO[39M: [32mcreateProof started[39m - fileCount: 8, files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"Flush Mounting Bracket update.docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"Nature.jpeg","size":25415,"fieldname":"file","hasBuffer":true},{"name":"techsoldrawing (1).png","size":36400,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"fieldname":"file","hasBuffer":true}]
+[2025-08-14T07:40:11.507Z] [31MERROR[39M: [31mcreateProof failed[39m - error: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[2025-08-14T07:40:11.514Z] [31MERROR[39M: [31mExpected property name or '}' in JSON at position 1 (line 1 column 2): Expected property name or '}' in JSON at position 1 (line 1 column 2)[39m - stack: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at ProofController.parseMetadata (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/controllers/proofController.ts:31:61)
+    at ProofController.createProof (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/controllers/proofController.ts:153:29)
+    at /Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/routes/v1/proofRoutes.ts:51:29
+    at /Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/routes/v1/proofRoutes.ts:20:21
+    at Layer.handleRequest (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/router/lib/route.js:157:13)
+    at Multipart.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/middlewares/busboyMiddleware.ts:275:7)
+    at Multipart.emit (node:events:530:35)
+    at Multipart.emit (node:domain:489:12)
+[2025-08-14T07:40:22.711Z] [32MINFO[39M: [32mBusboy upload started[39m - contentType: multipart/form-data; boundary=--------------------------646140092679937015661750, contentLength: 23054283, maxFiles: 12, maxFileSize: 200MB
+[2025-08-14T07:40:22.712Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update - Copy (1).docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:40:22.712Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update.docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:40:22.712Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A - Copy.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 1, maxFiles: 12
+[2025-08-14T07:40:22.713Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:40:22.713Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update - Copy (1).docx, size: 27724
+[2025-08-14T07:40:22.713Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileCount: 1
+[2025-08-14T07:40:22.713Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update.docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:40:22.713Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update.docx, size: 27724
+[2025-08-14T07:40:22.713Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update.docx, fileCount: 2
+[2025-08-14T07:40:22.725Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:40:22.727Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A - Copy.pdf, size: 11212817
+[2025-08-14T07:40:22.727Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileCount: 3
+[2025-08-14T07:40:22.727Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 4, maxFiles: 12
+[2025-08-14T07:40:22.738Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A.pdf, size: 11212817
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A.pdf, fileCount: 4
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Nature.jpeg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: techsoldrawing (1).png, encoding: 7bit, mimeType: image/png, fileCount: 5, maxFiles: 12
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile end event[39m - filename: Nature.jpeg, fileSize: 25415, useMemoryOnly: true
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Nature.jpeg, size: 25415
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Nature.jpeg, fileCount: 5
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile end event[39m - filename: techsoldrawing (1).png, fileSize: 36400, useMemoryOnly: true
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: techsoldrawing (1).png, size: 36400
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile processing completed[39m - filename: techsoldrawing (1).png, fileCount: 6
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 7, maxFiles: 12
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, size: 254505
+[2025-08-14T07:40:22.739Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileCount: 7
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, size: 254505
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileCount: 8
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mAll files processed[39m - fileCount: 8, bodyKeys: ["metadata"], files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"source":"memory","fieldname":"file"},{"name":"Flush Mounting Bracket update.docx","size":27724,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"Nature.jpeg","size":25415,"source":"memory","fieldname":"file"},{"name":"techsoldrawing (1).png","size":36400,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"source":"memory","fieldname":"file"}]
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mcreateProof started[39m - fileCount: 8, files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"Flush Mounting Bracket update.docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"Nature.jpeg","size":25415,"fieldname":"file","hasBuffer":true},{"name":"techsoldrawing (1).png","size":36400,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"fieldname":"file","hasBuffer":true}]
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating files[39m - fileCount: 8, maxFileSizeMB: 50
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update.docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: Nature.jpeg, fileSize: 25415, hasBuffer: true, bufferSize: 25415, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: techsoldrawing (1).png, fileSize: 36400, hasBuffer: true, bufferSize: 36400, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mFile validation completed[39m - validFiles: 8
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mUploading files[39m - count: 8, isIndividual: false
+[2025-08-14T07:40:22.740Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:40:24.248Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-08-14T07:40:24.249Z] [32MINFO[39M: [32mCreating proof[39m - proofName: Markups & Reference Documents, fileId: FWSDRMB0LUR00UGR
+[2025-08-14T07:40:24.249Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: Markups & Reference Documents
+[2025-08-14T07:40:24.249Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:40:24.249Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:40:24.249Z] [32MINFO[39M: [32mUsing cached workflow[39m - cacheKey: {"reviewers":["Echo.Xiao@fbin.com","Jane.Zhang@fbin.com","Rola.Luo@fbin.com"],"approver":["Echo.Xiao@fbin.com"],"documentType":"markups"}
+[2025-08-14T07:40:24.249Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:40:24.250Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 1
+[2025-08-14T07:40:25.292Z] [32MINFO[39M: [32mProof created[39m - fileId: FWSDRMB0LUR00UGR, elapsedMs: 1042
+[2025-08-14T07:40:26.035Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FWSDRMB0LUR00UGR, elapsedMs: 743
+[2025-08-14T07:40:26.035Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1785
+[2025-08-14T07:40:26.747Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 711
+[2025-08-14T07:40:26.747Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 2498
+[2025-08-14T07:40:26.748Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-08-14T07:40:26.748Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:40:27.172Z] [32MINFO[39M: [32mPublishing proof event to Event Grid[39m - eventId: proof-created-P7TTVM4KHGR260I7-1755157227172-rw8xef272, eventType: PageProof.ProofCreated, proofId: P7TTVM4KHGR260I7, action: created
+[2025-08-14T07:40:28.246Z] [32MINFO[39M: [32mProof event published successfully to Event Grid[39m - eventId: proof-created-P7TTVM4KHGR260I7-1755157227172-rw8xef272, proofId: P7TTVM4KHGR260I7, action: created
+[2025-08-14T07:40:28.246Z] [32MINFO[39M: [32mEvent Grid events published for created proofs[39m - proofCount: 1
+[2025-08-14T07:48:43.716Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-08-14T07:48:48.976Z] [32MINFO[39M: [32mTemporary directory validated: /tmp[39m
+[2025-08-14T07:48:50.760Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-08-14T07:49:06.932Z] [32MINFO[39M: [32mBusboy upload started[39m - contentType: multipart/form-data; boundary=--------------------------928869794132913697599001, contentLength: 23054283, maxFiles: 12, maxFileSize: 200MB
+[2025-08-14T07:49:06.934Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update - Copy (1).docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:49:06.934Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update.docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:49:06.935Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A - Copy.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 1, maxFiles: 12
+[2025-08-14T07:49:06.935Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:49:06.935Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update - Copy (1).docx, size: 27724
+[2025-08-14T07:49:06.935Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileCount: 1
+[2025-08-14T07:49:06.936Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update.docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:49:06.936Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update.docx, size: 27724
+[2025-08-14T07:49:06.936Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update.docx, fileCount: 2
+[2025-08-14T07:49:06.948Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:49:06.949Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A - Copy.pdf, size: 11212817
+[2025-08-14T07:49:06.949Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileCount: 3
+[2025-08-14T07:49:06.949Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 4, maxFiles: 12
+[2025-08-14T07:49:06.961Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Nature.jpeg, encoding: 7bit, mimeType: image/jpeg, fileCount: 4, maxFiles: 12
+[2025-08-14T07:49:06.961Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:49:06.962Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A.pdf, size: 11212817
+[2025-08-14T07:49:06.962Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A.pdf, fileCount: 4
+[2025-08-14T07:49:06.962Z] [32MINFO[39M: [32mFile end event[39m - filename: Nature.jpeg, fileSize: 25415, useMemoryOnly: true
+[2025-08-14T07:49:06.962Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Nature.jpeg, size: 25415
+[2025-08-14T07:49:06.962Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Nature.jpeg, fileCount: 5
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: techsoldrawing (1).png, encoding: 7bit, mimeType: image/png, fileCount: 6, maxFiles: 12
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 6, maxFiles: 12
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile end event[39m - filename: techsoldrawing (1).png, fileSize: 36400, useMemoryOnly: true
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: techsoldrawing (1).png, size: 36400
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile processing completed[39m - filename: techsoldrawing (1).png, fileCount: 6
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 7, maxFiles: 12
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, size: 254505
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileCount: 7
+[2025-08-14T07:49:06.963Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:49:06.964Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, size: 254505
+[2025-08-14T07:49:06.964Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileCount: 8
+[2025-08-14T07:49:06.964Z] [32MINFO[39M: [32mAll files processed[39m - fileCount: 8, bodyKeys: ["metadata"], files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"source":"memory","fieldname":"file"},{"name":"Flush Mounting Bracket update.docx","size":27724,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"Nature.jpeg","size":25415,"source":"memory","fieldname":"file"},{"name":"techsoldrawing (1).png","size":36400,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"source":"memory","fieldname":"file"}]
+[2025-08-14T07:49:06.964Z] [32MINFO[39M: [32mcreateProof started[39m - fileCount: 8, files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"Flush Mounting Bracket update.docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"Nature.jpeg","size":25415,"fieldname":"file","hasBuffer":true},{"name":"techsoldrawing (1).png","size":36400,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"fieldname":"file","hasBuffer":true}]
+[2025-08-14T07:49:06.965Z] [32MINFO[39M: [32mValidating files[39m - fileCount: 8, maxFileSizeMB: 50
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update.docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: Nature.jpeg, fileSize: 25415, hasBuffer: true, bufferSize: 25415, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: techsoldrawing (1).png, fileSize: 36400, hasBuffer: true, bufferSize: 36400, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mFile validation completed[39m - validFiles: 8
+[2025-08-14T07:49:06.966Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-08-14T07:49:06.969Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-08-14T07:49:06.972Z] [32MINFO[39M: [32mPageProofAuthService: Session loaded, decrypted, and credentials match[39m
+[2025-08-14T07:49:06.973Z] [32MINFO[39M: [32mPageProofAuthService: Session restored and set to client[39m
+[2025-08-14T07:49:06.973Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 7
+[2025-08-14T07:49:07.738Z] [32MINFO[39M: [32mFetched groups[39m - elapsedMs: 765
+[2025-08-14T07:49:07.738Z] [32MINFO[39M: [32mFound existing collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:49:07.738Z] [32MINFO[39M: [32mensureCollectionExists (existing)[39m - elapsedMs: 772
+[2025-08-14T07:49:07.738Z] [32MINFO[39M: [32mUploading files[39m - count: 8, isIndividual: false
+[2025-08-14T07:49:07.739Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:49:08.705Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-08-14T07:49:08.706Z] [32MINFO[39M: [32mCreating proof[39m - proofName: Markups & Reference Documents, fileId: FKIXEUAE1PELFDY8
+[2025-08-14T07:49:08.706Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: Markups & Reference Documents
+[2025-08-14T07:49:08.706Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:49:08.707Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:49:08.707Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 1
+[2025-08-14T07:49:08.707Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:49:10.846Z] [32MINFO[39M: [32mWorkflow created[39m - elapsedMs: 2138
+[2025-08-14T07:49:10.847Z] [32MINFO[39M: [32mcreateWorkflow completed[39m - elapsedMs: 2140
+[2025-08-14T07:49:10.847Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2141
+[2025-08-14T07:49:11.609Z] [32MINFO[39M: [32mProof created[39m - fileId: FKIXEUAE1PELFDY8, elapsedMs: 762
+[2025-08-14T07:49:12.810Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: FKIXEUAE1PELFDY8, elapsedMs: 1200
+[2025-08-14T07:49:12.811Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1963
+[2025-08-14T07:49:13.412Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 601
+[2025-08-14T07:49:13.412Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4706
+[2025-08-14T07:49:13.413Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-08-14T07:49:13.414Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:49:13.802Z] [32MINFO[39M: [32mPublishing proof event to Event Grid[39m - eventId: proof-created-P7J1T7P2C48JYU7L-1755157753802-75ax91cqd, eventType: PageProof.ProofCreated, proofId: P7J1T7P2C48JYU7L, action: created
+[2025-08-14T07:49:15.393Z] [32MINFO[39M: [32mProof event published successfully to Event Grid[39m - eventId: proof-created-P7J1T7P2C48JYU7L-1755157753802-75ax91cqd, proofId: P7J1T7P2C48JYU7L, action: created
+[2025-08-14T07:49:15.393Z] [32MINFO[39M: [32mEvent Grid events published for created proofs[39m - proofCount: 1
+[2025-08-14T07:49:24.672Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-08-14T07:52:48.609Z] [32MINFO[39M: [32mTemporary directory validated: /tmp[39m
+[1755157284173] [33MWARN[39M: [33mHMAC verification failed[39m - ip: ::1, reason: timestamp_expired
+[2025-08-14T07:52:51.449Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-08-14T07:53:08.232Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'hmac-secret-key'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-08-14T07:53:08.233Z] [31MERROR[39M: [31mSignature verification error[39m - error: {"code":"ERR_INVALID_ARG_TYPE"}
+[1755157974914] [33MWARN[39M: [33mHMAC verification failed[39m - ip: ::1, reason: verification_error
+[2025-08-14T07:53:26.255Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'hmac-secret-key'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-08-14T07:53:26.256Z] [31MERROR[39M: [31mSignature verification error[39m - error: {"code":"ERR_INVALID_ARG_TYPE"}
+[1755157974914] [33MWARN[39M: [33mHMAC verification failed[39m - ip: ::1, reason: verification_error
+[2025-08-14T07:53:30.194Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-08-14T07:53:30.195Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m
+[2025-08-14T07:53:50.324Z] [32MINFO[39M: [32mTemporary directory validated: /tmp[39m
+[2025-08-14T07:53:52.006Z] [32MINFO[39M: [32mBusboy upload started[39m - contentType: multipart/form-data; boundary=--------------------------730541685629913542842577, contentLength: 23054283, maxFiles: 12, maxFileSize: 200MB
+[2025-08-14T07:53:52.008Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update - Copy (1).docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:53:52.008Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Flush Mounting Bracket update.docx, encoding: 7bit, mimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document, fileCount: 1, maxFiles: 12
+[2025-08-14T07:53:52.008Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A - Copy.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 1, maxFiles: 12
+[2025-08-14T07:53:52.009Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:53:52.009Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update - Copy (1).docx, size: 27724
+[2025-08-14T07:53:52.009Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update - Copy (1).docx, fileCount: 1
+[2025-08-14T07:53:52.009Z] [32MINFO[39M: [32mFile end event[39m - filename: Flush Mounting Bracket update.docx, fileSize: 27724, useMemoryOnly: true
+[2025-08-14T07:53:52.010Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Flush Mounting Bracket update.docx, size: 27724
+[2025-08-14T07:53:52.010Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Flush Mounting Bracket update.docx, fileCount: 2
+[2025-08-14T07:53:52.027Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:53:52.028Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A - Copy.pdf, size: 11212817
+[2025-08-14T07:53:52.028Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A - Copy.pdf, fileCount: 3
+[2025-08-14T07:53:52.029Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: TK323EQ_SPC20418A.pdf, encoding: 7bit, mimeType: application/pdf, fileCount: 4, maxFiles: 12
+[2025-08-14T07:53:52.040Z] [32MINFO[39M: [32mFile end event[39m - filename: TK323EQ_SPC20418A.pdf, fileSize: 11212817, useMemoryOnly: true
+[2025-08-14T07:53:52.042Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: TK323EQ_SPC20418A.pdf, size: 11212817
+[2025-08-14T07:53:52.042Z] [32MINFO[39M: [32mFile processing completed[39m - filename: TK323EQ_SPC20418A.pdf, fileCount: 4
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: Nature.jpeg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: techsoldrawing (1).png, encoding: 7bit, mimeType: image/png, fileCount: 5, maxFiles: 12
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 5, maxFiles: 12
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile end event[39m - filename: Nature.jpeg, fileSize: 25415, useMemoryOnly: true
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: Nature.jpeg, size: 25415
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile processing completed[39m - filename: Nature.jpeg, fileCount: 5
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile end event[39m - filename: techsoldrawing (1).png, fileSize: 36400, useMemoryOnly: true
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: techsoldrawing (1).png, size: 36400
+[2025-08-14T07:53:52.044Z] [32MINFO[39M: [32mFile processing completed[39m - filename: techsoldrawing (1).png, fileCount: 6
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile event received[39m - fieldname: file, filename: LAR_ExpanderSweep_Install_1 1.jpg, encoding: 7bit, mimeType: image/jpeg, fileCount: 7, maxFiles: 12
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, size: 254505
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileCount: 7
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile end event[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, useMemoryOnly: true
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile stored in memory[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, size: 254505
+[2025-08-14T07:53:52.045Z] [32MINFO[39M: [32mFile processing completed[39m - filename: LAR_ExpanderSweep_Install_1 1.jpg, fileCount: 8
+[2025-08-14T07:53:52.046Z] [32MINFO[39M: [32mAll files processed[39m - fileCount: 8, bodyKeys: ["metadata"], files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"source":"memory","fieldname":"file"},{"name":"Flush Mounting Bracket update.docx","size":27724,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"source":"memory","fieldname":"file"},{"name":"Nature.jpeg","size":25415,"source":"memory","fieldname":"file"},{"name":"techsoldrawing (1).png","size":36400,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"source":"memory","fieldname":"file"},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"source":"memory","fieldname":"file"}]
+[2025-08-14T07:53:52.046Z] [32MINFO[39M: [32mcreateProof started[39m - fileCount: 8, files: [{"name":"Flush Mounting Bracket update - Copy (1).docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"Flush Mounting Bracket update.docx","size":27724,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A - Copy.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"TK323EQ_SPC20418A.pdf","size":11212817,"fieldname":"file","hasBuffer":true},{"name":"Nature.jpeg","size":25415,"fieldname":"file","hasBuffer":true},{"name":"techsoldrawing (1).png","size":36400,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 - Copy 1.jpg","size":254505,"fieldname":"file","hasBuffer":true},{"name":"LAR_ExpanderSweep_Install_1 1.jpg","size":254505,"fieldname":"file","hasBuffer":true}]
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating files[39m - fileCount: 8, maxFileSizeMB: 50
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update - Copy (1).docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: Flush Mounting Bracket update.docx, fileSize: 27724, hasBuffer: true, bufferSize: 27724, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A - Copy.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: TK323EQ_SPC20418A.pdf, fileSize: 11212817, hasBuffer: true, bufferSize: 11212817, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: Nature.jpeg, fileSize: 25415, hasBuffer: true, bufferSize: 25415, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: techsoldrawing (1).png, fileSize: 36400, hasBuffer: true, bufferSize: 36400, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 - Copy 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mValidating file[39m - fileName: LAR_ExpanderSweep_Install_1 1.jpg, fileSize: 254505, hasBuffer: true, bufferSize: 254505, fieldname: file
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mFile validation completed[39m - validFiles: 8
+[2025-08-14T07:53:52.048Z] [32MINFO[39M: [32mPageProofAuthService: Starting client initialization[39m
+[2025-08-14T07:53:52.050Z] [32MINFO[39M: [32mPageProofAuthService: PageProof client created[39m
+[2025-08-14T07:53:52.052Z] [32MINFO[39M: [32mPageProofAuthService: Session loaded, decrypted, and credentials match[39m
+[2025-08-14T07:53:52.052Z] [32MINFO[39M: [32mPageProofAuthService: Session restored and set to client[39m
+[2025-08-14T07:53:52.052Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 4
+[2025-08-14T07:53:52.869Z] [32MINFO[39M: [32mFetched groups[39m - elapsedMs: 817
+[2025-08-14T07:53:52.869Z] [32MINFO[39M: [32mFound existing collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:53:52.870Z] [32MINFO[39M: [32mensureCollectionExists (existing)[39m - elapsedMs: 822
+[2025-08-14T07:53:52.870Z] [32MINFO[39M: [32mUploading files[39m - count: 8, isIndividual: false
+[2025-08-14T07:53:52.870Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:53:53.450Z] [31MERROR[39M: [31mKeyVaultService: Error fetching secret 'webhook-hmac-secret'[39m - error: ChainedTokenCredential authentication failed.
+CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+CredentialUnavailableError: The 'Az.Account' module >= 2.2.0 is not installed. Install the Azure Az PowerShell module with: "Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force".
+CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+[2025-08-14T07:53:53.899Z] [32MINFO[39M: [32mFile upload completed[39m - uploaded: 1
+[2025-08-14T07:53:53.899Z] [32MINFO[39M: [32mCreating proof[39m - proofName: Markups & Reference Documents, fileId: F0ARUWGRV9HWHYKH
+[2025-08-14T07:53:53.900Z] [32MINFO[39M: [32mCreating proof(s)[39m - proofName: Markups & Reference Documents
+[2025-08-14T07:53:53.900Z] [32MINFO[39M: [32mUsing cached or inflight collection[39m - collectionName: ADHOC-01203
+[2025-08-14T07:53:53.900Z] [32MINFO[39M: [32mensureCollectionExists (cache hit)[39m - elapsedMs: 0
+[2025-08-14T07:53:53.900Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:53:53.900Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:53:55.945Z] [32MINFO[39M: [32mWorkflow created[39m - elapsedMs: 2043
+[2025-08-14T07:53:55.945Z] [32MINFO[39M: [32mcreateWorkflow completed[39m - elapsedMs: 2045
+[2025-08-14T07:53:55.945Z] [32MINFO[39M: [32mFetched client, collection, workflow[39m - elapsedMs: 2045
+[2025-08-14T07:53:56.877Z] [32MINFO[39M: [32mProof created[39m - fileId: F0ARUWGRV9HWHYKH, elapsedMs: 931
+[2025-08-14T07:53:57.418Z] [32MINFO[39M: [32mGroup/owner assignment done[39m - fileId: F0ARUWGRV9HWHYKH, elapsedMs: 540
+[2025-08-14T07:53:57.418Z] [32MINFO[39M: [32mAll proof create tasks settled[39m - elapsedMs: 1472
+[2025-08-14T07:53:57.985Z] [32MINFO[39M: [32mApprover(s) set[39m - elapsedMs: 567
+[2025-08-14T07:53:57.985Z] [32MINFO[39M: [32mProof creation completed[39m - proofCount: 1, totalElapsedMs: 4085
+[2025-08-14T07:53:57.985Z] [32MINFO[39M: [32mBatch proof creation complete[39m - total: 1
+[2025-08-14T07:53:57.985Z] [32MINFO[39M: [32mgetClient completed[39m - elapsedMs: 0
+[2025-08-14T07:54:10.772Z] [32MINFO[39M: [32mReceived shutdown signal, closing server...[39m

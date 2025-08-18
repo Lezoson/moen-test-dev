@@ -1,0 +1,116 @@
+[2025-08-18T18:01:46.039Z] [31MERROR[39M: [31muncaughtException: Cannot set headers after they are sent to the client[39m
+[31mError: Cannot set headers after they are sent to the client[39m
+[31m    at ServerResponse.setHeader (node:_http_outgoing:699:11)[39m
+[31m    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)[39m
+[31m    at ServerResponse.emit (node:events:530:35)[39m
+[31m    at ServerResponse.emit (node:domain:489:12)[39m
+[31m    at onFinish (node:_http_outgoing:1081:10)[39m
+[31m    at afterWrite (node:internal/streams/writable:710:5)[39m
+[31m    at afterWriteTick (node:internal/streams/writable:696:10)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m - error: {"code":"ERR_HTTP_HEADERS_SENT"}, stack: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)
+    at ServerResponse.emit (node:events:530:35)
+    at ServerResponse.emit (node:domain:489:12)
+    at onFinish (node:_http_outgoing:1081:10)
+    at afterWrite (node:internal/streams/writable:710:5)
+    at afterWriteTick (node:internal/streams/writable:696:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21), exception: true, date: Mon Aug 18 2025 23:31:46 GMT+0530 (India Standard Time), process: {"pid":77896,"uid":502,"gid":20,"cwd":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev","execPath":"/Users/tonylezosonjohnbritto/.nvm/versions/node/v22.14.0/bin/node","version":"v22.14.0","argv":{"0":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/.bin/ts-node","1":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/bin/www"},"memoryUsage":{"rss":429096960,"heapTotal":275038208,"heapUsed":262222208,"external":30473849,"arrayBuffers":26385155}}, os: {"loadavg":{"0":2.59423828125,"1":2.4404296875,"2":2.38525390625},"uptime":388216}, trace: {"0":{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":699,"method":"setHeader","native":false},"1":{"column":11,"file":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts","function":null,"line":118,"method":null,"native":false},"2":{"column":35,"file":"node:events","function":"ServerResponse.emit","line":530,"method":"emit","native":false},"3":{"column":12,"file":"node:domain","function":"ServerResponse.emit","line":489,"method":"emit","native":false},"4":{"column":10,"file":"node:_http_outgoing","function":"onFinish","line":1081,"method":null,"native":false},"5":{"column":5,"file":"node:internal/streams/writable","function":"afterWrite","line":710,"method":null,"native":false},"6":{"column":10,"file":"node:internal/streams/writable","function":"afterWriteTick","line":696,"method":null,"native":false},"7":{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":89,"method":null,"native":false}}
+[2025-08-18T18:02:16.410Z] [31MERROR[39M: [31muncaughtException: Cannot set headers after they are sent to the client[39m
+[31mError: Cannot set headers after they are sent to the client[39m
+[31m    at ServerResponse.setHeader (node:_http_outgoing:699:11)[39m
+[31m    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)[39m
+[31m    at ServerResponse.emit (node:events:530:35)[39m
+[31m    at ServerResponse.emit (node:domain:489:12)[39m
+[31m    at onFinish (node:_http_outgoing:1081:10)[39m
+[31m    at afterWrite (node:internal/streams/writable:710:5)[39m
+[31m    at afterWriteTick (node:internal/streams/writable:696:10)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m - error: {"code":"ERR_HTTP_HEADERS_SENT"}, stack: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)
+    at ServerResponse.emit (node:events:530:35)
+    at ServerResponse.emit (node:domain:489:12)
+    at onFinish (node:_http_outgoing:1081:10)
+    at afterWrite (node:internal/streams/writable:710:5)
+    at afterWriteTick (node:internal/streams/writable:696:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21), exception: true, date: Mon Aug 18 2025 23:32:16 GMT+0530 (India Standard Time), process: {"pid":78491,"uid":502,"gid":20,"cwd":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev","execPath":"/Users/tonylezosonjohnbritto/.nvm/versions/node/v22.14.0/bin/node","version":"v22.14.0","argv":{"0":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/.bin/ts-node","1":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/bin/www"},"memoryUsage":{"rss":469155840,"heapTotal":324321280,"heapUsed":285251488,"external":9194182,"arrayBuffers":5105488}}, os: {"loadavg":{"0":2.60986328125,"1":2.46728515625,"2":2.3974609375},"uptime":388246}, trace: {"0":{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":699,"method":"setHeader","native":false},"1":{"column":11,"file":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts","function":null,"line":118,"method":null,"native":false},"2":{"column":35,"file":"node:events","function":"ServerResponse.emit","line":530,"method":"emit","native":false},"3":{"column":12,"file":"node:domain","function":"ServerResponse.emit","line":489,"method":"emit","native":false},"4":{"column":10,"file":"node:_http_outgoing","function":"onFinish","line":1081,"method":null,"native":false},"5":{"column":5,"file":"node:internal/streams/writable","function":"afterWrite","line":710,"method":null,"native":false},"6":{"column":10,"file":"node:internal/streams/writable","function":"afterWriteTick","line":696,"method":null,"native":false},"7":{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":89,"method":null,"native":false}}
+[2025-08-18T18:03:40.044Z] [31MERROR[39M: [31muncaughtException: Cannot set headers after they are sent to the client[39m
+[31mError: Cannot set headers after they are sent to the client[39m
+[31m    at ServerResponse.setHeader (node:_http_outgoing:699:11)[39m
+[31m    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)[39m
+[31m    at ServerResponse.emit (node:events:530:35)[39m
+[31m    at ServerResponse.emit (node:domain:489:12)[39m
+[31m    at onFinish (node:_http_outgoing:1081:10)[39m
+[31m    at callback (node:internal/streams/writable:766:21)[39m
+[31m    at afterWrite (node:internal/streams/writable:710:5)[39m
+[31m    at afterWriteTick (node:internal/streams/writable:696:10)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m - error: {"code":"ERR_HTTP_HEADERS_SENT"}, stack: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)
+    at ServerResponse.emit (node:events:530:35)
+    at ServerResponse.emit (node:domain:489:12)
+    at onFinish (node:_http_outgoing:1081:10)
+    at callback (node:internal/streams/writable:766:21)
+    at afterWrite (node:internal/streams/writable:710:5)
+    at afterWriteTick (node:internal/streams/writable:696:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21), exception: true, date: Mon Aug 18 2025 23:33:40 GMT+0530 (India Standard Time), process: {"pid":79634,"uid":502,"gid":20,"cwd":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev","execPath":"/Users/tonylezosonjohnbritto/.nvm/versions/node/v22.14.0/bin/node","version":"v22.14.0","argv":{"0":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/.bin/ts-node","1":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/bin/www"},"memoryUsage":{"rss":464076800,"heapTotal":321175552,"heapUsed":292551344,"external":9214317,"arrayBuffers":5118787}}, os: {"loadavg":{"0":3.474609375,"1":2.7041015625,"2":2.48974609375},"uptime":388330}, trace: {"0":{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":699,"method":"setHeader","native":false},"1":{"column":11,"file":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts","function":null,"line":118,"method":null,"native":false},"2":{"column":35,"file":"node:events","function":"ServerResponse.emit","line":530,"method":"emit","native":false},"3":{"column":12,"file":"node:domain","function":"ServerResponse.emit","line":489,"method":"emit","native":false},"4":{"column":10,"file":"node:_http_outgoing","function":"onFinish","line":1081,"method":null,"native":false},"5":{"column":21,"file":"node:internal/streams/writable","function":"callback","line":766,"method":null,"native":false},"6":{"column":5,"file":"node:internal/streams/writable","function":"afterWrite","line":710,"method":null,"native":false},"7":{"column":10,"file":"node:internal/streams/writable","function":"afterWriteTick","line":696,"method":null,"native":false},"8":{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":89,"method":null,"native":false}}
+[2025-08-18T18:04:42.493Z] [31MERROR[39M: [31muncaughtException: Cannot set headers after they are sent to the client[39m
+[31mError: Cannot set headers after they are sent to the client[39m
+[31m    at ServerResponse.setHeader (node:_http_outgoing:699:11)[39m
+[31m    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)[39m
+[31m    at ServerResponse.emit (node:events:530:35)[39m
+[31m    at ServerResponse.emit (node:domain:489:12)[39m
+[31m    at onFinish (node:_http_outgoing:1081:10)[39m
+[31m    at callback (node:internal/streams/writable:766:21)[39m
+[31m    at afterWrite (node:internal/streams/writable:710:5)[39m
+[31m    at afterWriteTick (node:internal/streams/writable:696:10)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m - error: {"code":"ERR_HTTP_HEADERS_SENT"}, stack: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)
+    at ServerResponse.emit (node:events:530:35)
+    at ServerResponse.emit (node:domain:489:12)
+    at onFinish (node:_http_outgoing:1081:10)
+    at callback (node:internal/streams/writable:766:21)
+    at afterWrite (node:internal/streams/writable:710:5)
+    at afterWriteTick (node:internal/streams/writable:696:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21), exception: true, date: Mon Aug 18 2025 23:34:42 GMT+0530 (India Standard Time), process: {"pid":80462,"uid":502,"gid":20,"cwd":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev","execPath":"/Users/tonylezosonjohnbritto/.nvm/versions/node/v22.14.0/bin/node","version":"v22.14.0","argv":{"0":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/.bin/ts-node","1":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/bin/www"},"memoryUsage":{"rss":463372288,"heapTotal":323272704,"heapUsed":285160344,"external":9192328,"arrayBuffers":5103634}}, os: {"loadavg":{"0":2.880859375,"1":2.69580078125,"2":2.50048828125},"uptime":388392}, trace: {"0":{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":699,"method":"setHeader","native":false},"1":{"column":11,"file":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts","function":null,"line":118,"method":null,"native":false},"2":{"column":35,"file":"node:events","function":"ServerResponse.emit","line":530,"method":"emit","native":false},"3":{"column":12,"file":"node:domain","function":"ServerResponse.emit","line":489,"method":"emit","native":false},"4":{"column":10,"file":"node:_http_outgoing","function":"onFinish","line":1081,"method":null,"native":false},"5":{"column":21,"file":"node:internal/streams/writable","function":"callback","line":766,"method":null,"native":false},"6":{"column":5,"file":"node:internal/streams/writable","function":"afterWrite","line":710,"method":null,"native":false},"7":{"column":10,"file":"node:internal/streams/writable","function":"afterWriteTick","line":696,"method":null,"native":false},"8":{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":89,"method":null,"native":false}}
+[2025-08-18T18:05:07.357Z] [31MERROR[39M: [31muncaughtException: Cannot set headers after they are sent to the client[39m
+[31mError: Cannot set headers after they are sent to the client[39m
+[31m    at ServerResponse.setHeader (node:_http_outgoing:699:11)[39m
+[31m    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)[39m
+[31m    at ServerResponse.emit (node:events:530:35)[39m
+[31m    at ServerResponse.emit (node:domain:489:12)[39m
+[31m    at onFinish (node:_http_outgoing:1081:10)[39m
+[31m    at callback (node:internal/streams/writable:766:21)[39m
+[31m    at afterWrite (node:internal/streams/writable:710:5)[39m
+[31m    at afterWriteTick (node:internal/streams/writable:696:10)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m - error: {"code":"ERR_HTTP_HEADERS_SENT"}, stack: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)
+    at ServerResponse.emit (node:events:530:35)
+    at ServerResponse.emit (node:domain:489:12)
+    at onFinish (node:_http_outgoing:1081:10)
+    at callback (node:internal/streams/writable:766:21)
+    at afterWrite (node:internal/streams/writable:710:5)
+    at afterWriteTick (node:internal/streams/writable:696:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21), exception: true, date: Mon Aug 18 2025 23:35:07 GMT+0530 (India Standard Time), process: {"pid":80918,"uid":502,"gid":20,"cwd":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev","execPath":"/Users/tonylezosonjohnbritto/.nvm/versions/node/v22.14.0/bin/node","version":"v22.14.0","argv":{"0":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/.bin/ts-node","1":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/bin/www"},"memoryUsage":{"rss":463519744,"heapTotal":323010560,"heapUsed":284377440,"external":9169650,"arrayBuffers":5080956}}, os: {"loadavg":{"0":6.58544921875,"1":3.52197265625,"2":2.7998046875},"uptime":388417}, trace: {"0":{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":699,"method":"setHeader","native":false},"1":{"column":11,"file":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts","function":null,"line":118,"method":null,"native":false},"2":{"column":35,"file":"node:events","function":"ServerResponse.emit","line":530,"method":"emit","native":false},"3":{"column":12,"file":"node:domain","function":"ServerResponse.emit","line":489,"method":"emit","native":false},"4":{"column":10,"file":"node:_http_outgoing","function":"onFinish","line":1081,"method":null,"native":false},"5":{"column":21,"file":"node:internal/streams/writable","function":"callback","line":766,"method":null,"native":false},"6":{"column":5,"file":"node:internal/streams/writable","function":"afterWrite","line":710,"method":null,"native":false},"7":{"column":10,"file":"node:internal/streams/writable","function":"afterWriteTick","line":696,"method":null,"native":false},"8":{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":89,"method":null,"native":false}}
+[2025-08-18T18:06:00.954Z] [31MERROR[39M: [31muncaughtException: Cannot set headers after they are sent to the client[39m
+[31mError: Cannot set headers after they are sent to the client[39m
+[31m    at ServerResponse.setHeader (node:_http_outgoing:699:11)[39m
+[31m    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)[39m
+[31m    at ServerResponse.emit (node:events:530:35)[39m
+[31m    at ServerResponse.emit (node:domain:489:12)[39m
+[31m    at onFinish (node:_http_outgoing:1081:10)[39m
+[31m    at callback (node:internal/streams/writable:766:21)[39m
+[31m    at afterWrite (node:internal/streams/writable:710:5)[39m
+[31m    at afterWriteTick (node:internal/streams/writable:696:10)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m - error: {"code":"ERR_HTTP_HEADERS_SENT"}, stack: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.<anonymous> (/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts:118:11)
+    at ServerResponse.emit (node:events:530:35)
+    at ServerResponse.emit (node:domain:489:12)
+    at onFinish (node:_http_outgoing:1081:10)
+    at callback (node:internal/streams/writable:766:21)
+    at afterWrite (node:internal/streams/writable:710:5)
+    at afterWriteTick (node:internal/streams/writable:696:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21), exception: true, date: Mon Aug 18 2025 23:36:00 GMT+0530 (India Standard Time), process: {"pid":81701,"uid":502,"gid":20,"cwd":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev","execPath":"/Users/tonylezosonjohnbritto/.nvm/versions/node/v22.14.0/bin/node","version":"v22.14.0","argv":{"0":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/node_modules/.bin/ts-node","1":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/bin/www"},"memoryUsage":{"rss":461242368,"heapTotal":323796992,"heapUsed":284870384,"external":9192304,"arrayBuffers":5103610}}, os: {"loadavg":{"0":4.11474609375,"1":3.31640625,"2":2.7626953125},"uptime":388470}, trace: {"0":{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":699,"method":"setHeader","native":false},"1":{"column":11,"file":"/Users/tonylezosonjohnbritto/Projects/Moen/Nodejs/Development/moen-dev/src/config/performance.ts","function":null,"line":118,"method":null,"native":false},"2":{"column":35,"file":"node:events","function":"ServerResponse.emit","line":530,"method":"emit","native":false},"3":{"column":12,"file":"node:domain","function":"ServerResponse.emit","line":489,"method":"emit","native":false},"4":{"column":10,"file":"node:_http_outgoing","function":"onFinish","line":1081,"method":null,"native":false},"5":{"column":21,"file":"node:internal/streams/writable","function":"callback","line":766,"method":null,"native":false},"6":{"column":5,"file":"node:internal/streams/writable","function":"afterWrite","line":710,"method":null,"native":false},"7":{"column":10,"file":"node:internal/streams/writable","function":"afterWriteTick","line":696,"method":null,"native":false},"8":{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":89,"method":null,"native":false}}

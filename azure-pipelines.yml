@@ -1,0 +1,55 @@
+trigger:
+  - main
+
+variables:
+  - group: GitHubSecrets
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: 18.x
+    displayName: Install Node.js
+
+  - script: |
+      echo "//npm.pkg.github.com/:_authToken=$(GITHUB_TOKEN)" > .npmrc
+      echo "@pageproof:registry=https://npm.pkg.github.com" >> .npmrc
+      npm whoami --registry=https://npm.pkg.github.com
+    env:
+      GITHUB_TOKEN: $(GITHUB_TOKEN)
+    displayName: Configure npm for private packages
+
+  - script: |
+      npm ci
+    displayName: Install npm dependencies
+
+  - script: |
+      npm run copy:config
+    displayName: Run copy config
+
+  - script: |
+      npm run build:prod
+    env:
+      NODE_ENV: production
+    displayName: Build application
+
+  - script: |
+      zip -r app.zip . -x "*.git*" "*.DS_Store" "node_modules/*" "src/*" "bin/*" "*.ts" "*.tsx" "tsconfig.json" "esbuild.config.*" "jest.config.js" "test-eventgrid-retries.js"
+    displayName: Create deployment package
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: app.zip
+      artifact: app-archive
+      publishLocation: pipeline
+    displayName: Publish deployment package
+
+  - task: AzureWebApp@1
+    inputs:
+      azureSubscription: 'Your-Azure-Subscription-Name'
+      appName: 'your-app-service-name'
+      package: '$(Pipeline.Workspace)/app-archive/app.zip'
+      appType: 'webApp'
+    displayName: Deploy to Azure App Service
