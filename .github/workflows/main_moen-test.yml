@@ -27,19 +27,26 @@ jobs:
 
       - name: Configure npm for PageProof SDK
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.PAGEPROOF_TOKEN }}" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
           echo "@pageproof:registry=https://npm.pkg.github.com" >> .npmrc
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAGEPROOF_TOKEN }}
 
-      - name: npm install, build, and test
-        run: |
-          npm ci
-          npm run copy:config
-          npm run build:prod
+      - name: Install dependencies
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy config files
+        run: npm run copy:config
+
+      - name: Build application
+        run: npm run build:prod
         env:
           NODE_ENV: production
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run tests
+        run: npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
