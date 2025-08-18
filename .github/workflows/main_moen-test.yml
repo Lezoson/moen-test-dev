@@ -22,12 +22,24 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@pageproof'
+
+      - name: Configure npm for PageProof SDK
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.PAGEPROOF_TOKEN }}" > .npmrc
+          echo "@pageproof:registry=https://npm.pkg.github.com" >> .npmrc
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: npm install, build, and test
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          npm ci
+          npm run copy:config
+          npm run build:prod
+        env:
+          NODE_ENV: production
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
