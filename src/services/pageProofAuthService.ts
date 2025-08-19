@@ -228,12 +228,10 @@ class PageProofAuthService {
   private static async initializeClient(): Promise<PageProof> {
     loggerService.logger.info('PageProofAuthService: Starting client initialization');
 
-    const [applicationId, subscriptionKey, email, password] = await Promise.all([
-      getSecretFromKeyVault('pageproofapplicationid'),
-      getSecretFromKeyVault('pageproofsubscriptionKey'),
-      getSecretFromKeyVault('pageproofemail'),
-      getSecretFromKeyVault('pageproofpassword'),
-    ]);
+    const applicationId = 'fortunebrands-sdk';
+    const subscriptionKey = 'y0UTuMyLTlEJr6CUlSseHmYQTLwix44a';
+    const email = 'Rola.Luo+sdk@fbin.com';
+    const password = 'Rola123!';
 
     const client = new PageProof({
       options: {
@@ -250,9 +248,7 @@ class PageProofAuthService {
 
     try {
       if (!session) {
-        loggerService.logger.info(
-          'PageProofAuthService: No valid session found (or credentials changed), logging in',
-        );
+        loggerService.logger.info('PageProofAuthService: No valid session found (or credentials changed), logging in');
         session = await this.retryWithBackoff(
           () => client.accounts.login(email, password),
           'login',
