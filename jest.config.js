@@ -4,13 +4,14 @@ module.exports = {
   roots: ['<rootDir>/src'],
   moduleDirectories: ['node_modules', 'src'],
   transform: {
-    '^.+\\.ts$': 'ts-jest', // Use ts-jest for .ts files
+    '^.+\\.ts$': 'ts-jest',
   },
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,ts}', '!src/**/*.d.ts', '!src/**/index.js'],
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
-  testMatch: ['**/?(*.)+(spec|test).{js,ts}'], // Match .js and .ts files
+  testMatch: ['**/?(*.)+(spec|test).{js,ts}'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   transformIgnorePatterns: ['/node_modules/'],
+  setupFilesAfterEnv: ['<rootDir>/src/tests/setup.ts'],
 };

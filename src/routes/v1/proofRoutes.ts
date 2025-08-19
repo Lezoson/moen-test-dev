@@ -3,104 +3,156 @@ import { promisify } from 'util';
 
 import { Router, Request, Response, NextFunction } from 'express';
 
-import { busboyUpload } from '../../middlewares/busboyMiddleware'; // Assuming busboyUpload is in a separate file
+import { busboyUpload } from '../../middlewares/busboyMiddleware';
 import { proofController } from '../../controllers/proofController';
 import { hmacValidator } from '../../middlewares/hmacMiddleware';
-import { FileInfo } from '../../middlewares/busboyMiddleware'; // Import FileInfo interface
+import { FileInfo } from '../../middlewares/busboyMiddleware';
+import { performanceService } from '../../services/performanceService';
 import { loggerService } from '../../utils/logger';
 
 const unlinkAsync = promisify(fs.unlink);
 
 const router = Router();
 
-const asyncHandler =
-  (fn: (req: Request, res: Response, next: NextFunction) => Promise<void>) =>
-  (req: Request, res: Response, next: NextFunction) =>
-    Promise.resolve(fn(req, res, next)).catch(next);
+// Enhanced async handler with performance monitoring
+const asyncHandler = (operationName: string) => {
+  return (fn: (req: Request, res: Response, next: NextFunction) => Promise<void>) =>
+    async (req: Request, res: Response, next: NextFunction) => {
+      return performanceService.measureAsync(`${operationName}.total`, async () => {
+        try {
+          await fn(req, res, next);
+        } catch (error) {
+          loggerService.logger.error(`Error in ${operationName}`, {
+            error: (error as Error).message,
+            url: req.originalUrl,
+            method: req.method,
+            ip: req.ip,
+          });
+          next(error);
+        }
+      });
+    };
+};
 
-// File upload configuration for Busboy
+// Optimized file upload configuration
 const uploadConfig = {
   limits: {
     fileSize: 200 * 1024 * 1024, // 200MB per file
     files: 10, // Max 10 files per upload
   },
+  // Add performance optimizations
+  highWaterMark: 64 * 1024, // 64KB chunks for better memory usage
+  preservePath: false, // Don't preserve full path for security
 };
 
-// Helper to clean up temporary files
+// Enhanced file cleanup with better error handling
 const cleanupFiles = async (files: FileInfo[]) => {
-  await Promise.all(
-    files
-      .filter(file => file.path && file.path !== '')
-      .map(file =>
-        unlinkAsync(file.path).catch(err => {
-          loggerService.logger.error(`Failed to delete temp file ${file.path}:`, err);
-        }),
-      ),
-  );
+  if (!files || files.length === 0) return;
+
+  const cleanupPromises = files
+    .filter(file => file.path && file.path !== '')
+    .map(async file => {
+      try {
+        await unlinkAsync(file.path);
+        loggerService.logger.debug('Temporary file cleaned up', { path: file.path });
+      } catch (err) {
+        loggerService.logger.warn(`Failed to delete temp file ${file.path}:`, {
+          error: (err as Error).message,
+        });
+      }
+    });
+
+  await Promise.allSettled(cleanupPromises);
 };
 
-// Create Proof with File Upload
+// Optimized file upload handler with performance monitoring
+const fileUploadHandler = (operationName: string) => {
+  return async (req: Request, res: Response, next: NextFunction) => {
+    const files = (req as any).files as FileInfo[];
+    const startTime = Date.now();
+
+    try {
+      loggerService.logger.info(`Starting ${operationName}`, {
+        fileCount: files?.length || 0,
+        totalSize: files?.reduce((sum, file) => sum + (file.size || 0), 0) || 0,
+      });
+
+      // Execute the operation
+      if (operationName === 'createProof') {
+        await proofController.createProof(req, res, files);
+      } else if (operationName === 'updateProof') {
+        await proofController.updateProof(req, res, files);
+      }
+
+      loggerService.logger.info(`${operationName} completed`, {
+        duration: Date.now() - startTime,
+        fileCount: files?.length || 0,
+      });
+    } catch (error) {
+      loggerService.logger.error(`${operationName} failed`, {
+        error: (error as Error).message,
+        duration: Date.now() - startTime,
+        fileCount: files?.length || 0,
+      });
+      throw error;
+    } finally {
+      // Always cleanup files
+      await cleanupFiles(files);
+    }
+  };
+};
+
+// Create Proof with File Upload - Optimized
 router.post(
   '/create-proof',
   hmacValidator.verify,
   busboyUpload(uploadConfig),
-  asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
-    const files = (req as any).files as FileInfo[];
-    try {
-      await proofController.createProof(req, res, files);
-    } finally {
-      await cleanupFiles(files);
-    }
-  }),
+  asyncHandler('createProof')(fileUploadHandler('createProof')),
 );
-// Lock Proof
+
+// Lock Proof - Optimized
 router.post(
   '/lock-proof',
   hmacValidator.verify,
-  asyncHandler(proofController.lockProof.bind(proofController)),
+  asyncHandler('lockProof')(proofController.lockProof.bind(proofController)),
 );
 
-// Assign Owners
+// Assign Owners - Optimized
 router.post(
   '/assign-owners',
   hmacValidator.verify,
-  asyncHandler(proofController.addOwners.bind(proofController)),
+  asyncHandler('assignOwners')(proofController.addOwners.bind(proofController)),
 );
 
-// Update Proof with File Upload
+// Update Proof with File Upload - Optimized
 router.post(
   '/update-proof',
   hmacValidator.verify,
   busboyUpload(uploadConfig),
-  asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
-    const files = (req as any).files as FileInfo[];
-    try {
-      await proofController.updateProof(req, res, files);
-    } finally {
-      await cleanupFiles(files);
-    }
-  }),
+  asyncHandler('updateProof')(fileUploadHandler('updateProof')),
 );
 
-// Assign Reviewers
+// Assign Reviewers - Optimized
 router.post(
   '/assign-reviewers',
   hmacValidator.verify,
-  asyncHandler(proofController.replaceReviewersAndApprovers.bind(proofController)),
+  asyncHandler('assignReviewers')(
+    proofController.replaceReviewersAndApprovers.bind(proofController),
+  ),
 );
 
-// Update Due Dates
+// Update Due Dates - Optimized
 router.post(
   '/update-due-dates',
   hmacValidator.verify,
-  asyncHandler(proofController.updateDueDates.bind(proofController)),
+  asyncHandler('updateDueDates')(proofController.updateDueDates.bind(proofController)),
 );
 
-// Archive Proof
+// Archive Proof - Optimized
 router.post(
   '/archive-proof',
   hmacValidator.verify,
-  asyncHandler(proofController.archiveProof.bind(proofController)),
+  asyncHandler('archiveProof')(proofController.archiveProof.bind(proofController)),
 );
 
 export default router;

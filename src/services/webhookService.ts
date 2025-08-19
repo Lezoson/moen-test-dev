@@ -210,6 +210,22 @@ async function determineConditionAndLock(
           },
         },
       };
+    } else if (proofStatus === ProofStatus.InProofing) {
+      return {
+        bypass: true,
+        response: {
+          status: 200,
+          message: `Proof ${proofName} is now in proofing status`,
+          inproofingData: {
+            proofId,
+            proofName,
+            email,
+            reason: 'in_proofing',
+            status: proofStatus,
+            dueDate,
+          },
+        },
+      };
     }
     return { condition: null, locked: false };
   }
@@ -227,17 +243,54 @@ async function determineConditionAndLock(
       condition: ProofStatus.TodosRequested,
       locked: await lockProofIfApplicable(proofId, `status: ${proofStatus}`),
     };
-  } else if (proofStatus === ProofStatus.InProofing && isOverdue(dueDate)) {
-    return {
-      condition: ProofStatus.Overdue,
-      locked: await lockProofIfApplicable(proofId, 'overdue in_proofing'),
-    };
+  } else if (proofStatus === ProofStatus.InProofing) {
+    // Handle inproofing status - check if overdue
+    if (isOverdue(dueDate)) {
+      return {
+        condition: ProofStatus.Overdue,
+        locked: await lockProofIfApplicable(proofId, 'overdue in_proofing'),
+      };
+    } else {
+      // Inproofing but not overdue - return bypass response
+      return {
+        bypass: true,
+        response: {
+          status: 200,
+          message: `Proof ${proofName} is now in proofing status`,
+          inproofingData: {
+            proofId,
+            proofName,
+            email,
+            reason: 'in_proofing',
+            status: proofStatus,
+            dueDate,
+          },
+        },
+      };
+    }
   }
 
   return { condition: null, locked: false };
 }
 
 export class WebhookService {
+  /**
+   * Handles proof status webhook from PageProof
+   *
+   * Supported statuses:
+   * - approved: Proof has been approved
+   * - todos_requested/todos-requested: Rework requested
+   * - in_proofing: Proof is currently being reviewed
+   * - overdue: Proof is overdue (when in_proofing and past due date)
+   *
+   * For inproofing status:
+   * - Returns proofId and status in inproofingData
+   * - Sends notification to PowerApps
+   * - Includes dueDate if available
+   *
+   * @param body Webhook payload from PageProof
+   * @returns Response with appropriate data based on status
+   */
   static async handleProofStatus(body: any) {
     const proofData = extractProofData(body);
     const { groupId, groupName } = await getGroupInfo(proofData.proofId);
@@ -251,21 +304,24 @@ export class WebhookService {
     );
 
     if ('bypass' in result && result.bypass) {
+      const responseData = result.response.reworkData || result.response.inproofingData;
+
       loggerService.logger.info('Bypassed lock condition', {
         groupName,
-        status: result.response.reworkData.status,
+        status: responseData.status,
         proofIds: proofData.proofId,
         proofNames: proofData.proofName,
-        reason: result.response.reworkData.reason,
+        reason: responseData.reason,
       });
 
       await PowerAppsService.sendToPowerApps({
         groupName,
-        status: result.response.reworkData.status,
+        status: responseData.status,
         proofIds: [proofData.proofId],
         proofNames: [proofData.proofName],
-        reason: result.response.reworkData.reason,
-        email: result.response.reworkData.email,
+        reason: responseData.reason,
+        email: responseData.email,
+        dueDate: responseData.dueDate,
       });
 
       return result.response;

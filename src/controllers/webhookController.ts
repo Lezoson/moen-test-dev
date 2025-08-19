@@ -55,11 +55,23 @@ class WebhookController {
       if (result.status !== 200) {
         res.status(result.status).json({ statusCode: result.status, error: result.error });
       } else {
-        res.status(200).json({
+        const response: any = {
           statusCode: 200,
           message: result.message,
-          proofData: result.proofData,
-        });
+        };
+
+        // Include appropriate data based on the response type
+        if (result.proofData) {
+          response.proofData = result.proofData;
+        }
+        if (result.reworkData) {
+          response.reworkData = result.reworkData;
+        }
+        if (result.inproofingData) {
+          response.inproofingData = result.inproofingData;
+        }
+
+        res.status(200).json(response);
       }
     } catch (error) {
       loggerService.logger.error('Error in proofStatus', { error });

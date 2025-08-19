@@ -1,6 +1,7 @@
 import crypto from 'crypto';
 
 import { loggerService } from '../utils/logger';
+import config from '../config';
 
 import { getSecretFromKeyVault } from './keyVaultService';
 
@@ -26,8 +27,8 @@ class HmacService {
   private retryCount = 0;
 
   private readonly config: HmacConfig = {
-    cacheTimeoutMs: parseInt(process.env.HMAC_CACHE_TTL || '60000'), // 1 min
-    signatureTimeoutMs: parseInt(process.env.HMAC_TIMEOUT || '300000'), // 5 min
+    cacheTimeoutMs: config.security.hmacCacheTtl,
+    signatureTimeoutMs: config.security.hmacTimeout,
     algorithm: 'sha256',
     maxRetries: parseInt(process.env.HMAC_MAX_RETRIES || '3'),
     retryDelayMs: parseInt(process.env.HMAC_RETRY_DELAY || '1000'),
@@ -47,8 +48,13 @@ class HmacService {
     if (!this.cachedSecret || now - this.cacheTimestamp > this.config.cacheTimeoutMs) {
       for (let attempt = 1; attempt <= this.config.maxRetries; attempt++) {
         try {
-          // this.cachedSecret = await getSecretFromKeyVault('hmac-secret-key');
-          this.cachedSecret = '6413d2d9adfd7be563e664906534b051e4cf257ea7b5e653c68ef5028298ac60';
+          // Try to get secret from Azure Key Vault if configured
+          if (config.azure.keyVaultUrl) {
+            this.cachedSecret = await getSecretFromKeyVault('hmac-secret-key');
+          } else {
+            // Fallback to configuration secret
+            this.cachedSecret = config.security.hmacSecretKey;
+          }
 
           if (!this.cachedSecret || this.cachedSecret.length < 32) {
             throw new Error('Invalid secret length or empty secret');
@@ -101,8 +107,7 @@ class HmacService {
     }
 
     try {
-      // const actualSecret = await this.getSecret();
-      const actualSecret = '6413d2d9adfd7be563e664906534b051e4cf257ea7b5e653c68ef5028298ac60';
+      const actualSecret = await this.getSecret();
 
       return crypto.timingSafeEqual(
         Buffer.from(providedSecret, 'utf8'),

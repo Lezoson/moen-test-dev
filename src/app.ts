@@ -4,14 +4,20 @@ import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
-import dotenv from 'dotenv';
 import compression from 'compression';
 import createError from 'http-errors';
-import rateLimit from 'express-rate-limit';
+// import rateLimit from 'express-rate-limit';
 
-// #region Load Environment
-dotenv.config();
-// #endregion
+// Import configuration and services
+import config from './config';
+import { loggerService } from './utils/logger';
+import {
+  performanceMiddleware,
+  responseCacheMiddleware,
+  cacheResponseMiddleware,
+  compressionOptimizationMiddleware,
+  requestThrottlingMiddleware,
+} from './middlewares/performanceMiddleware';
 
 // #region App Initialization
 const app = express();
@@ -19,30 +25,32 @@ const app = express();
 
 // #region Security Configuration
 // Enhanced Helmet configuration for better security
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        styleSrc: ["'self'", "'unsafe-inline'"],
-        scriptSrc: ["'self'"],
-        imgSrc: ["'self'", 'data:', 'https:'],
-        connectSrc: ["'self'"],
-        fontSrc: ["'self'"],
-        objectSrc: ["'none'"],
-        mediaSrc: ["'self'"],
-        frameSrc: ["'none'"],
+if (config.security.helmetEnabled) {
+  app.use(
+    helmet({
+      contentSecurityPolicy: {
+        directives: {
+          defaultSrc: ["'self'"],
+          styleSrc: ["'self'", "'unsafe-inline'"],
+          scriptSrc: ["'self'"],
+          imgSrc: ["'self'", 'data:', 'https:'],
+          connectSrc: ["'self'"],
+          fontSrc: ["'self'"],
+          objectSrc: ["'none'"],
+          mediaSrc: ["'self'"],
+          frameSrc: ["'none'"],
+        },
       },
-    },
-    crossOriginEmbedderPolicy: false,
-    crossOriginResourcePolicy: { policy: 'cross-origin' },
-  }),
-);
+      crossOriginEmbedderPolicy: false,
+      crossOriginResourcePolicy: { policy: 'cross-origin' },
+    }),
+  );
+}
 
 // Enhanced CORS configuration
 const corsOptions = {
-  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3000'],
-  credentials: true,
+  origin: config.security.corsOrigins,
+  credentials: config.security.corsCredentials,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: [
     'Content-Type',
@@ -55,31 +63,41 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+// Rate limiting removed for PowerApps integration
 // Enhanced rate limiting with different limits for different endpoints
-const strictLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 50, // limit each IP to 50 requests per windowMs
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: 'Too many requests from this IP, please try again later.',
-  skipSuccessfulRequests: false,
-  skipFailedRequests: false,
-});
+// const strictLimiter = rateLimit({
+//   windowMs: config.security.rateLimitWindowMs,
+//   max: config.security.rateLimitMaxStrict, // Strict limit for webhook endpoints
+//   standardHeaders: true,
+//   legacyHeaders: false,
+//   message: 'Too many requests from this IP, please try again later.',
+//   skipSuccessfulRequests: false,
+//   skipFailedRequests: false,
+// });
 
-const standardLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 200, // limit each IP to 200 requests per windowMs
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: 'Too many requests from this IP, please try again later.',
-  skipSuccessfulRequests: false,
-  skipFailedRequests: false,
-});
+// const standardLimiter = rateLimit({
+//   windowMs: config.security.rateLimitWindowMs,
+//   max: config.security.rateLimitMax, // Higher limit for PowerApps integration
+//   standardHeaders: true,
+//   legacyHeaders: false,
+//   message: 'Too many requests from this IP, please try again later.',
+//   skipSuccessfulRequests: false,
+//   skipFailedRequests: false,
+// });
 
-// Apply rate limiting
-app.use('/api/v1/webhook', strictLimiter); // Stricter limits for webhooks
-app.use('/api/v1/hmac', strictLimiter); // Stricter limits for HMAC endpoints
-app.use('/api/', standardLimiter); // Standard limits for other API endpoints
+// // PowerApps-friendly limiter with higher limits
+// const powerAppsLimiter = rateLimit({
+//   windowMs: config.security.rateLimitWindowMs,
+//   max: config.security.rateLimitMax * 2, // Double the standard limit for PowerApps
+//   standardHeaders: true,
+//   legacyHeaders: false,
+//   message: 'Too many requests from this IP, please try again later.',
+//   skipSuccessfulRequests: false,
+//   skipFailedRequests: false,
+// });
+
+// Rate limiting completely removed for PowerApps integration
+loggerService.logger.info('Rate limiting disabled for PowerApps integration');
 
 // Additional security headers
 app.use((req: Request, res: Response, next: NextFunction) => {
@@ -96,8 +114,8 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // #region Middleware
 app.use(
   compression({
-    level: 6, // Balanced compression level
-    threshold: 1024, // Only compress responses > 1KB
+    level: config.performance.compressionLevel,
+    threshold: config.performance.compressionThreshold,
     filter: (req: Request, res: Response) => {
       if (req.headers['x-no-compression']) {
         return false;
@@ -107,12 +125,12 @@ app.use(
   }),
 );
 
-app.use(cookieParser(process.env.COOKIE_SECRET || 'default-secret-change-in-production'));
+app.use(cookieParser(config.security.jwtSecret));
 
 // Enhanced JSON parsing with size limits and validation
 app.use(
   express.json({
-    limit: '10mb', // Reduced from 1gb for security
+    limit: config.performance.jsonLimit,
     strict: true,
     verify: (req: Request, res: Response, buf: Buffer) => {
       try {
@@ -127,7 +145,7 @@ app.use(
 app.use(
   express.urlencoded({
     extended: false,
-    limit: '10mb',
+    limit: config.performance.urlencodedLimit,
     parameterLimit: 1000, // Limit number of parameters
   }),
 );
@@ -135,12 +153,12 @@ app.use(
 // Serve static files with security headers
 app.use(
   express.static(path.resolve(__dirname, 'build'), {
-    maxAge: '1h', // Cache static files for 1 hour
+    maxAge: config.performance.staticCacheMaxAge * 1000, // Convert to milliseconds
     etag: true,
     lastModified: true,
     setHeaders: (res: Response, path: string) => {
       if (path.endsWith('.js') || path.endsWith('.css')) {
-        res.setHeader('Cache-Control', 'public, max-age=3600');
+        res.setHeader('Cache-Control', `public, max-age=${config.performance.staticCacheMaxAge}`);
       }
     },
   }),
@@ -148,19 +166,38 @@ app.use(
 
 // #endregion
 
+// #region Performance Middleware
+// Add performance monitoring and optimization middleware
+if (config.monitoring.enableRequestLogging) {
+  app.use(performanceMiddleware);
+}
+
+if (config.performance.enableResponseCaching) {
+  app.use(responseCacheMiddleware);
+  app.use(cacheResponseMiddleware);
+}
+
+app.use(compressionOptimizationMiddleware);
+
+// Disable request throttling for integration APIs to ensure reliable communication
+// between PageProof and PowerApps
+// if (config.monitoring.enableMetrics && config.isProduction()) {
+//   app.use(requestThrottlingMiddleware);
+// }
+// #endregion
+
 // #region API Routes (v1)
 import healthRoutes from './routes/v1/healthRoutes';
 import hmacRoutes from './routes/v1/hmacRoutes';
 import proofRoutes from './routes/v1/proofRoutes';
 import webhookRoutes, { rawBodySaver } from './routes/v1/webhookRoutes';
-import { loggerService } from './utils/logger';
 
 app.use('/api/v1/health', healthRoutes);
 app.use('/api/v1/hmac', hmacRoutes);
 app.use('/api/v1/proofs', proofRoutes);
 app.use(
   '/api/v1/webhook',
-  express.json({ limit: '50mb', verify: rawBodySaver }), // Reduced from 100mb
+  express.json({ limit: config.app.maxRequestBodySize, verify: rawBodySaver }),
   webhookRoutes,
 );
 
@@ -184,7 +221,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
   res.status(statusCode).json({
     error: message,
-    ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
+    ...(config.isDevelopment() && { stack: err.stack }),
   });
 });
 

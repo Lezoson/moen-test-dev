@@ -228,10 +228,12 @@ class PageProofAuthService {
   private static async initializeClient(): Promise<PageProof> {
     loggerService.logger.info('PageProofAuthService: Starting client initialization');
 
-    const applicationId = 'fortunebrands-sdk';
-    const subscriptionKey = 'y0UTuMyLTlEJr6CUlSseHmYQTLwix44a';
-    const email = 'Rola.Luo+sdk@fbin.com';
-    const password = 'Rola123!';
+    const [applicationId, subscriptionKey, email, password] = await Promise.all([
+      getSecretFromKeyVault('pageproofapplicationid'),
+      getSecretFromKeyVault('pageproofsubscriptionKey'),
+      getSecretFromKeyVault('pageproofemail'),
+      getSecretFromKeyVault('pageproofpassword'),
+    ]);
 
     const client = new PageProof({
       options: {
