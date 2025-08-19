@@ -7,6 +7,7 @@ import { Request, Response, NextFunction } from 'express';
 
 class LoggerService {
   private logDir: string = path.join(__dirname, '../logs');
+  private isProduction: boolean = process.env.NODE_ENV === 'production';
 
   constructor() {
     this.setupLogDirectory();
@@ -78,32 +79,46 @@ class LoggerService {
     format: winston.format.combine(
       winston.format.timestamp(),
       winston.format.errors({ stack: true }),
-      winston.format.colorize({ all: true }),
+      // Only use colorize in development
+      ...(this.isProduction ? [] : [winston.format.colorize({ all: true })]),
       this.logFormat,
     ),
     transports: [
-      new winston.transports.Console({
-        format: winston.format.combine(winston.format.colorize(), winston.format.simple()),
-      }),
+      // Console transport - only in development or when explicitly enabled
+      ...(this.isProduction && process.env.ENABLE_CONSOLE_LOGGING !== 'true' ? [] : [
+        new winston.transports.Console({
+          format: winston.format.combine(
+            winston.format.colorize(),
+            winston.format.simple()
+          ),
+        })
+      ]),
+      // File transport - always enabled
       new DailyRotateFile({
         dirname: this.logDir,
         filename: 'app-%DATE%.log',
         datePattern: 'YYYY-MM-DD',
-        zippedArchive: true, // Enable compression
-        maxFiles: '14d', // Keep logs for 14 days
-        maxSize: '20mb', // Rotate when file reaches 20MB
-        format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
+        zippedArchive: true,
+        maxFiles: '14d',
+        maxSize: '20mb',
+        format: winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.json()
+        ),
       }),
-      // Error log file
+      // Error log file - always enabled
       new DailyRotateFile({
         dirname: this.logDir,
         filename: 'error-%DATE%.log',
         datePattern: 'YYYY-MM-DD',
         zippedArchive: true,
-        maxFiles: '30d', // Keep error logs longer
+        maxFiles: '30d',
         maxSize: '20mb',
         level: 'error',
-        format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
+        format: winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.json()
+        ),
       }),
     ],
     // Handle uncaught exceptions
@@ -155,6 +170,7 @@ class LoggerService {
         logData.body = this.sanitizeData(req.body);
       }
 
+      // Use a single log entry with all information
       this.logger.info(`HTTP ${req.method} ${req.originalUrl}`, logData);
 
       return originalSend.call(this, data);
@@ -185,8 +201,13 @@ class LoggerService {
     });
   }
 
-  // Method to log performance metrics
+  // Method to log performance metrics - consolidated logging
   public logPerformance(operation: string, duration: number, metadata?: any): void {
+    // Only log performance metrics if explicitly enabled or in development
+    if (this.isProduction && process.env.ENABLE_PERFORMANCE_LOGGING !== 'true') {
+      return;
+    }
+    
     this.logger.info(`Performance: ${operation}`, {
       duration: `${duration}ms`,
       ...this.sanitizeData(metadata),

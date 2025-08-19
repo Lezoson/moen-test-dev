@@ -10,46 +10,40 @@ pool:
 steps:
   - task: NodeTool@0
     inputs:
-      versionSpec: 18.x
+      versionSpec: 22.x
     displayName: Install Node.js
 
   - script: |
-      echo "//npm.pkg.github.com/:_authToken=$(GITHUB_TOKEN)" > .npmrc
-      echo "@pageproof:registry=https://npm.pkg.github.com" >> .npmrc
+      echo "//npm.pkg.github.com/:_authToken=$(GITHUB_TOKEN)" > ~/.npmrc
       npm whoami --registry=https://npm.pkg.github.com
     env:
       GITHUB_TOKEN: $(GITHUB_TOKEN)
-    displayName: Configure npm for private packages
+    displayName: Authenticate with GitHub Packages
 
   - script: |
-      npm ci
+      npm install
     displayName: Install npm dependencies
 
   - script: |
       npm run copy:config
     displayName: Run copy config
 
-  - script: |
-      npm run build:prod
-    env:
-      NODE_ENV: production
-    displayName: Build application
+  # Build step removed as requested
 
   - script: |
-      zip -r app.zip . -x "*.git*" "*.DS_Store" "node_modules/*" "src/*" "bin/*" "*.ts" "*.tsx" "tsconfig.json" "esbuild.config.*" "jest.config.js" "test-eventgrid-retries.js"
-    displayName: Create deployment package
+      echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
+      echo "@pageproof:registry=https://npm.pkg.github.com" >> .npmrc
+    env:
+      GITHUB_TOKEN: $(GITHUB_TOKEN)
+    displayName: Copy token to .npmrc
+
+  - script: |
+      zip -r app.zip . -x "*.git*" "*.DS_Store" "node_modules/*"
+    displayName: Zip entire repo (excluding .git, .DS_Store, and node_modules)
 
   - task: PublishPipelineArtifact@1
     inputs:
       targetPath: app.zip
       artifact: app-archive
       publishLocation: pipeline
-    displayName: Publish deployment package
-
-  - task: AzureWebApp@1
-    inputs:
-      azureSubscription: 'Your-Azure-Subscription-Name'
-      appName: 'your-app-service-name'
-      package: '$(Pipeline.Workspace)/app-archive/app.zip'
-      appType: 'webApp'
-    displayName: Deploy to Azure App Service
+    displayName: Publish app.zip as artifact
